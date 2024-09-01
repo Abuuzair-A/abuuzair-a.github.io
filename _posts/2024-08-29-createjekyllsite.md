@@ -29,7 +29,7 @@ Learn how to effortlessly create and share your own Digital presence for free us
 - Name your repository `<username>.github.io` (replace `username` with your github username). 
 - Select `Public` > `Create Repository`
 
-![alt text](/assets/images/2024-03-17-create-a-digital-garden/image.png)
+![alt text]()
 _Cloning Chirpy GitHub Repo_
 
 
@@ -40,8 +40,7 @@ What are you waiting for? Go ahead and check it out 🙂
 
 To check your site deployment status, go to the `Code` section of your GitHub repository. Find the deployment status at the bottom right of the page and click for more details.
 
-![alt text](/assets/images/2024-03-17-create-a-digital-garden/screenshot-202403230117.png)
-_Check Deployment Status_
+
 
 
 
@@ -70,8 +69,7 @@ In the root directory, edit `_config.yaml` to set these basic properties. While 
 -  `url` = your github pages site (line 26)
 -  `name` = used as author for all posts (line 37)
 
-![alt text](/assets/images/2024-03-17-create-a-digital-garden/screenshot-202403232147.png)
-_'_config.yaml' file_
+
 
 
 
@@ -83,8 +81,6 @@ bundle exec jekyll s
 
 This should start the site on http://127.0.0.1:4000
 
-![alt text](/assets/images/2024-03-17-create-a-digital-garden/screenshot-202403232158.png)
-_Site after updating _config.yaml 
 
 ---
 ## Create Your First Post
@@ -120,7 +116,7 @@ tags: [tag1, tag2]
 ### Step 3: Add Markdown Text 
 ```markdown
 # Like, Comment, Subscribe
-If you find value in this how-to doc. [Subscribe](https://www.youtube.com/@geraldtui8445?sub_confirmation=1) to my YouTube channel for more tutorials just like this one. 👍 
+
 ```
 
 ### Deploy to GitHub 
@@ -143,4 +139,4 @@ Checkout the official Chirpy docs for specific Chirpy syntax 👉 https://chirpy
 3. Markdown 
    - Automatically saves pasted images into a directory of your choice. I use `/asets/images` 
    - In your VSCode Settings use this item in `Copy Files: Destination` 
-    ![alt text](/assets/images/2024-03-17-create-a-digital-garden/screenshot-202403240149.png)
+ 
