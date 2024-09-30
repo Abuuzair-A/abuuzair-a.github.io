@@ -8,9 +8,9 @@ order: 4
 
 
 # Whoami
-- I'm a Masters of Cybersecurity student in National Foresnsics Science University (NFSU) passionate cybersecurity enthusiast looking to render the best of my knowledge and skills.
+- I'm a Masters of Cybersecurity student in National Foresnsics Science University (NFSU) and a passionate cybersecurity enthusiast looking to render the best of my knowledge and skills.
 - I’m currently learning for **Multiple Certifications**
-- I'm currently publishing blogs for general IT architecture and Cyber Security tools.
+- I'm currently publishing blogs/toturials for general IT architecture and Cyber Security topics.
 - How to reach me **abuuzair.c@gmail.com**
 
 # Achievements
@@ -22,7 +22,7 @@ order: 4
 
 # Profiles
 
-<img src="https://tryhackme-badges.s3.amazonaws.com/biscuit.png" alt="TryHackMe">
+<img src="https://tryhackme-badges.s3.amazonaws.com/abuu.png" alt="TryHackMe">
 
 > Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
 {: .prompt-tip }
