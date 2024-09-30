@@ -16,7 +16,7 @@ timezone: Asia/Kolkata
 
 title: Abuuzair's Site # the main title
 
-tagline: Site to display my Experience and Projects # it will display as the subtitle
+tagline: Site to display my Experience and Projects <h2 style="background-color:Tomato;">Tomato</h2> # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   To display my Experience and Projects.
