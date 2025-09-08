@@ -23,6 +23,3 @@ order: 4
 # Profiles
 
 <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=1225520" style='border:none;'></iframe>
-
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
