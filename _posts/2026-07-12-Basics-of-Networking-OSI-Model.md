@@ -45,7 +45,6 @@ Data changes form as it travels through the stack.
   L1: Physical     -->  01101001 01110100 01110011 ------------>  L1: Physical
                         (Transmission Medium / Cable)
 ```
-
 ---
 
 ## 3. Layer-by-Layer Architecture
@@ -53,7 +52,10 @@ Data changes form as it travels through the stack.
 ### Layer 7: The Application Layer
 *   **Protocol Data Unit (PDU):** Data / Message
 *   **Core Purpose:** Provides the primary interface for end-user applications to access network services.
-*   **Key Responsibilities:** Identification of communication partners, resource availability assessment, and application synchronization.
+*   **Key Responsibilities:**
+	*   Identification of communication partners
+	*   Resource availability assessment
+	*   Application synchronization
 *   **Common Protocols:** HTTP, HTTPS, FTP, SMTP, DNS, SSH, RDP.
 
 ### Layer 6: The Presentation Layer
@@ -90,9 +92,9 @@ Data changes form as it travels through the stack.
 *   **Protocol Data Unit (PDU):** Packet
 *   **Core Purpose:** Responsible for the delivery of individual packets from the original source host to the final destination host across multiple networks.
 *   **Key Responsibilities:**
-	*   Logical addressing (IP addressing),
-	*   Routing (determining the best physical path),
-	*   Packet forwarding.
+	*   Logical addressing (IP addressing)
+	*   Routing (determining the best physical path)
+	*   Packet forwarding
 *   **Common Protocols:** IPv4, IPv6, ICMP, OSPF, BGP, ARP.
 
 ### Layer 2: The Data Link Layer
@@ -112,7 +114,7 @@ Data changes form as it travels through the stack.
 	*   Defining mechanical and electrical specifications
 	*    Bit synchronization
 	*    Transmission modes (simplex/duplex)
-	*    Physical topologies.
+	*    Physical topologies
 *   **Common Components:** Fiber optic cables, Cat6 Ethernet cables, Hubs, Repeaters, RF Antennas.
 
 ## 4. Radial Mind Map Diagram
@@ -186,7 +188,7 @@ graph LR
     class L7A,L7B,L7C,L6A,L6B,L6C,L5A,L5B,L5C,L4A,L4B,L4C,L3A,L3B,L3C,L2A,L2B,L2C,L1A,L1B,L1C subBlobs;
 ```
 
-### 5. References
+## 5. References
 - Books
 	- [Computer Networks by Andrew S. Tanenbaum](https://networking.harshkapadia.me/files/books/computer-networks-tanenbaum-5th-edition.pdf)
 	- Network Forensics - Tracking Hackers through Cyberspace by Sherri Davidoff & Jonathan Ham
