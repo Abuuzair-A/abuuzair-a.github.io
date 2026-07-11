@@ -31,15 +31,14 @@ Data changes form as it travels through the stack.
 * **Decapsulation (Receiver):** Data moves **Up** (L1 to L7). Each layer strips its corresponding header.
 
 ```
-```text
-[SENDER]                                                       [RECEIVER]
-  L7: Application  --> [ Data ]                                  L7: Application
-  L6: Presentation --> [ H6 ][ Data ]                            L6: Presentation
-  L5: Session      --> [ H5 ][ H6 ][ Data ]                      L5: Session
-  L4: Transport    --> [ H4 ][ H5 ][ H6 ][ Data ]                L4: Transport
-  L3: Network      --> [ H3 ][ H4 ][ H5 ][ H6 ][ Data ]          L3: Network
+[SENDER]                                                          [RECEIVER]
+  L7: Application  --> [ Data ]                                   L7: Application
+  L6: Presentation --> [ H6 ][ Data ]                             L6: Presentation
+  L5: Session      --> [ H5 ][ H6 ][ Data ]                       L5: Session
+  L4: Transport    --> [ H4 ][ H5 ][ H6 ][ Data ]                 L4: Transport
+  L3: Network      --> [ H3 ][ H4 ][ H5 ][ H6 ][ Data ]           L3: Network
   L2: Data Link    --> [ H2 ][ H3 ][ H4 ][ H5 ][ H6 ][ Data ][T2] L2: Data Link
-  L1: Physical     -->  01101001 01110100 01110011 ------------> L1: Physical
+  L1: Physical     -->  01101001 01110100 01110011 ------------>  L1: Physical
                         (Transmission Medium / Cable)
 ```
 
@@ -56,25 +55,40 @@ Data changes form as it travels through the stack.
 ### Layer 6: The Presentation Layer
 *   **Protocol Data Unit (PDU):** Data
 *   **Core Purpose:** Acts as the data translator for the network, ensuring compatibility between different data syntaxes.
-*   **Key Responsibilities:** Data formatting/syntax translation, data compression for efficiency, and standard encryption/decryption.
+*   **Key Responsibilities:**
+	*   Data formatting/syntax translation,
+	*   Data compression for efficiency
+	*   Standard encryption/decryption.
 *   **Common Examples:** SSL/TLS, ASCII, EBCDIC, JPEG, MPEG.
 
 ### Layer 5: The Session Layer
 *   **Protocol Data Unit (PDU):** Data
 *   **Core Purpose:** Establishes, manages, orchestrates, and terminates communication sessions between applications on distinct hosts.
-*   **Key Responsibilities:** Dialog control (managing simplex, half-duplex, or full-duplex streams), token management, and checkpoint synchronization for recovery.
+*   **Key Responsibilities:**
+	*   Dialog control (managing simplex, half-duplex, or full-duplex streams),
+	*   token management,
+	*   checkpoint synchronization for recovery.
+	*   Session Management
 *   **Common Protocols:** NetBIOS, RPC (Remote Procedure Call), PPTP.
 
 ### Layer 4: The Transport Layer
 *   **Protocol Data Unit (PDU):** Segment (TCP) / Datagram (UDP)
 *   **Core Purpose:** Manages end-to-end communication, ensuring complete, ordered, and error-free data transfer across the network.
-*   **Key Responsibilities:** Service-point addressing (ports), segmentation and reassembly, connection control, flow control, and error correction.
+*   **Key Responsibilities:**
+	*   Service-point addressing (ports)
+	*   Segmentation and reassembly
+	*   Connection control
+	*   Flow control
+	*   Error correction.
 *   **Common Protocols:** TCP, UDP.
 
 ### Layer 3: The Network Layer
 *   **Protocol Data Unit (PDU):** Packet
 *   **Core Purpose:** Responsible for the delivery of individual packets from the original source host to the final destination host across multiple networks.
-*   **Key Responsibilities:** Logical addressing (IP addressing), routing (determining the best physical path), and packet forwarding.
+*   **Key Responsibilities:**
+	*   Logical addressing (IP addressing),
+	*   Routing (determining the best physical path),
+	*   Packet forwarding.
 *   **Common Protocols:** IPv4, IPv6, ICMP, OSPF, BGP, ARP.
 
 ### Layer 2: The Data Link Layer
@@ -92,9 +106,9 @@ Data changes form as it travels through the stack.
 *   **Core Purpose:** Transmits unstructured raw bitstreams over a physical communication medium.
 *   **Key Responsibilities:**
 	*   Defining mechanical and electrical specifications
-	*    bit synchronization
-	*    transmission modes (simplex/duplex)
-	*    physical topologies.
+	*    Bit synchronization
+	*    Transmission modes (simplex/duplex)
+	*    Physical topologies.
 *   **Common Components:** Fiber optic cables, Cat6 Ethernet cables, Hubs, Repeaters, RF Antennas.
 
 ### References
