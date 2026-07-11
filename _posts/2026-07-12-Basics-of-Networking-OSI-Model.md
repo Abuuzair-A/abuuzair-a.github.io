@@ -5,6 +5,7 @@ categories: [Networking, Fundamentals]
 tags: [osi-model, networking, architecture, osi, reference-model]
 ---
 
+# The OSI Model
 The Open Systems Interconnection (OSI) model is a 7-layer conceptual framework.
 Standardizes how data moves across a network. 
 It ensures interoperability between different hardware vendors and software applications.
@@ -114,7 +115,78 @@ Data changes form as it travels through the stack.
 	*    Physical topologies.
 *   **Common Components:** Fiber optic cables, Cat6 Ethernet cables, Hubs, Repeaters, RF Antennas.
 
-### References
+## 4. Radial Mind Map Diagram
+
+```mermaid
+graph LR
+    %% Central Hub Node (The Sun)
+    OSI(("OSI Reference Model"))
+
+    %% ==========================================
+    %% LEFT WING: UPPER LAYERS (SOFTWARE STACK)
+    %% ==========================================
+    
+    %% Application Layer Boundary
+    L7A["HTTP / HTTPS / SSH"] ---> L7["L7: Application"]
+    L7B["User Interface Window"] ---> L7
+    L7C["Resource Verification"] ---> L7
+    L7 ---> OSI
+
+    %% Presentation Layer Boundary
+    L6A["Syntax Translation"] ---> L6["L6: Presentation"]
+    L6B["SSL / TLS Encryption"] ---> L6
+    L6C["Data Compression"] ---> L6
+    L6 ---> OSI
+
+    %% Session Layer Boundary
+    L5A["Dialog Control State"] ---> L5["L5: Session"]
+    L5B["Authentication Mapping"] ---> L5
+    L5C["Checkpoint Recovery"] ---> L5
+    L5 ---> OSI
+
+    %% ==========================================
+    %% RIGHT WING: LOWER LAYERS (KERNEL & HARDWARE)
+    %% ==========================================
+
+    %% Transport Layer Boundary
+    OSI ---> L4["L4: Transport"]
+    L4 ---> L4A["End-to-End Flow Control"]
+    L4 ---> L4B["Connection Error Recovery"]
+    L4 ---> L4C["Logical Port Multiplexing"]
+
+    %% Network Layer Boundary
+    OSI ---> L3["L3: Network"]
+    L3 ---> L3A["Dynamic Path Routing"]
+    L3 ---> L3B["Logical IP Addressing"]
+    L3 ---> L3C["Packet Forwarding"]
+
+    %% Data Link Layer Boundary
+    OSI ---> L2["L2: Data Link"]
+    L2 ---> L2A["Frame Segmentation"]
+    L2 ---> L2B["Hardware MAC Addressing"]
+    L2 ---> L2C["Link Error Detection"]
+
+    %% Physical Layer Boundary
+    OSI ---> L1["L1: Physical"]
+    L1 ---> L1A["Raw Bit Synchronization"]
+    L1 ---> L1B["Mechanical Interface Specs"]
+    L1 ---> L1C["Cabling, Fiber & RF Media"]
+
+    %% ==========================================
+    %% GRAPHICAL DESIGN & COLOR COORDINATION
+    %% ==========================================
+    style OSI fill:#2b2d42,stroke:#1d1e2c,stroke-width:3px,color:#fff
+    
+    classDef software fill:#d8f3dc,stroke:#52b788,stroke-width:2px,color:#000;
+    classDef hardware fill:#fde2e4,stroke:#ffb3c1,stroke-width:2px,color:#000;
+    classDef subBlobs fill:#edf2f4,stroke:#8d99ae,stroke-width:1px,color:#333;
+
+    class L7,L6,L5 software;
+    class L4,L3,L2,L1 hardware;
+    class L7A,L7B,L7C,L6A,L6B,L6C,L5A,L5B,L5C,L4A,L4B,L4C,L3A,L3B,L3C,L2A,L2B,L2C,L1A,L1B,L1C subBlobs;
+```
+
+### 5. References
 - Books
 	- [Computer Networks by Andrew S. Tanenbaum](https://networking.harshkapadia.me/files/books/computer-networks-tanenbaum-5th-edition.pdf)
 	- Network Forensics - Tracking Hackers through Cyberspace by Sherri Davidoff & Jonathan Ham
