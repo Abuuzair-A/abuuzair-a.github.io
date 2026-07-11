@@ -1,11 +1,14 @@
 ---
 title: "Basics of Networking: The ISO/OSI Model"
-date: 2026-07-12 12:00:00 
+date: 2026-07-12
 categories: [Networking, Fundamentals]
 tags: [osi-model, networking, architecture, osi, reference-model]
 ---
 
-The Open Systems Interconnection (OSI) model is a 7-layer conceptual framework that standardizes how data moves across a network. It ensures interoperability between different hardware vendors and software applications.
+The Open Systems Interconnection (OSI) model is a 7-layer conceptual framework.
+Standardizes how data moves across a network. 
+It ensures interoperability between different hardware vendors and software applications.
+Simplifies network design, implementation, and troubleshooting.
 
 ---
 
@@ -56,18 +59,18 @@ Data changes form as it travels through the stack.
 *   **Protocol Data Unit (PDU):** Data
 *   **Core Purpose:** Acts as the data translator for the network, ensuring compatibility between different data syntaxes.
 *   **Key Responsibilities:**
-	*   Data formatting/syntax translation,
+	*   Data formatting/syntax translation
 	*   Data compression for efficiency
-	*   Standard encryption/decryption.
+	*   Standard encryption/decryption
 *   **Common Examples:** SSL/TLS, ASCII, EBCDIC, JPEG, MPEG.
 
 ### Layer 5: The Session Layer
 *   **Protocol Data Unit (PDU):** Data
 *   **Core Purpose:** Establishes, manages, orchestrates, and terminates communication sessions between applications on distinct hosts.
 *   **Key Responsibilities:**
-	*   Dialog control (managing simplex, half-duplex, or full-duplex streams),
-	*   token management,
-	*   checkpoint synchronization for recovery.
+	*   Dialog control (managing simplex, half-duplex, or full-duplex streams)
+	*   Token management
+	*   Checkpoint synchronization for recovery
 	*   Session Management
 *   **Common Protocols:** NetBIOS, RPC (Remote Procedure Call), PPTP.
 
@@ -79,7 +82,7 @@ Data changes form as it travels through the stack.
 	*   Segmentation and reassembly
 	*   Connection control
 	*   Flow control
-	*   Error correction.
+	*   Error correction
 *   **Common Protocols:** TCP, UDP.
 
 ### Layer 3: The Network Layer
