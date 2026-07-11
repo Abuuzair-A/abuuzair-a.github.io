@@ -119,7 +119,7 @@ Data changes form as it travels through the stack.
 
 ## 4. Radial Mind Map Diagram
 
-![OSI Star Layout Diagram](/assets/img/osi-star-diagram1.svg)
+![OSI Reference Model Star Topology Diagram](/assets/img/osi-model-star1.png)
 
 ## 5. References
 - Books
