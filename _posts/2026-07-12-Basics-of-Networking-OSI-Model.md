@@ -1,8 +1,8 @@
 ---
-title: Basics of Networking : The ISO/OSI Model
+title: "Basics of Networking: The ISO/OSI Model"
 date: 2026-07-12 12:00:00 
 categories: [Networking, Fundamentals]
-tags: [osi-model, networking, architecture, OSI, Network Model]
+tags: [osi-model, networking, architecture, osi, reference-model]
 ---
 
 The Open Systems Interconnection (OSI) model is a 7-layer conceptual framework that standardizes how data moves across a network. It ensures interoperability between different hardware vendors and software applications.
